@@ -19,6 +19,14 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelectorAll('app-home article.card').length).toBe(6);
+    expect(compiled.querySelectorAll('app-home article.conf-card').length).toBe(6);
+  });
+
+  it('should show "Aucun organisateur" for a conference without organizers', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.textContent).toContain('Aucun organisateur');
+    expect(compiled.querySelectorAll('app-organizer-list .org-card').length).toBe(5);
   });
 });

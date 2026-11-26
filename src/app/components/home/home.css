@@ -9,7 +9,7 @@
 }
 
 .search {
-  max-width: 360px;
+  max-width: 420px;
 }
 
 .conf-card {
@@ -33,4 +33,16 @@
   top: 0.75rem;
   left: 0.75rem;
   font-weight: 600;
+}
+
+.org-chip {
+  font-weight: 500;
+  padding: 0.25rem 0.6rem 0.25rem 0.25rem;
+}
+
+.org-chip img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  vertical-align: middle;
 }

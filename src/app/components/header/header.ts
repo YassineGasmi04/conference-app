@@ -12,6 +12,7 @@ export class Header {
   readonly links = signal([
     { label: 'Accueil', href: '#', active: true },
     { label: 'Conférences', href: '#conferences', active: false },
+    { label: 'Organisateurs', href: '#organisateurs', active: false },
     { label: 'Contact', href: '#contact', active: false },
   ]);
 }

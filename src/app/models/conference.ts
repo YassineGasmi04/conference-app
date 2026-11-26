@@ -1,3 +1,5 @@
+import { Organizer } from './organizer';
+
 export interface Conference {
   id: number;
   picture: string;
@@ -5,4 +7,5 @@ export interface Conference {
   date: Date;
   adress: string;
   available_Places: number;
+  organizers: Organizer[];
 }
